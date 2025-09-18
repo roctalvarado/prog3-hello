@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    /* Separación de otros elementos */
+    margin: 0;
+    /* Separación de los bordes */
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    /* Color de fondo */
+    background-color: rgb(43, 37, 79);
+    /* Alineación de texto */
+    text-align: left;   
+    padding: 15px;
+}
+
+header a {
+    color:#fff;
+    /* Primer valor: Top y Bottom - Segundo valor: Left y Right */
+    /* Si son 4, sigue en sentido de las manecillas del reloj */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    text-align: left;
+}
