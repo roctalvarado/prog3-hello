@@ -20,7 +20,7 @@ header {
 header a {
     color:#fff;
     /* Primer valor: Top y Bottom - Segundo valor: Left y Right */
-    /* Si son 4, sigue en sentido de las manecillas del reloj */
+    /* Si son 4, sigue el sentido de las manecillas del reloj */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
