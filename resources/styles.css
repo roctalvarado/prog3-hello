@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     /* Separación de otros elementos */
     margin: 0;
-    /* Separación de los bordes */
+    /* Separación de los bordes del marco*/
     padding: 0;
     font-family: Arial, sans-serif;
     display: flex;
@@ -11,7 +11,7 @@ html, body {
 
 header {
     /* Color de fondo */
-    background-color: rgb(43, 37, 79);
+    background-color: #44254f;
     /* Alineación de texto */
     text-align: left;   
     padding: 15px;
@@ -30,4 +30,29 @@ main {
     flex: 1;
     padding: 30px;
     text-align: left;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.input-welcome {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.button-ok {
+    padding: 10px 20px;
+    background-color: #824b92;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #824b92;
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
 }
