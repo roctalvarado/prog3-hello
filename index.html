@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>Mi aplicación web</title>
-        <!-- Relación - Dirección de Destino -->
+        <!-- Relación/Refereicnia - Dirección de Destino -->
         <link rel="icon" href="resources/favicon.ico">
         <link rel="stylesheet" href="resources/styles.css">
+        <script src="resources/script.js"></script>
     </head>
 
     <body>
@@ -21,8 +22,9 @@
                 <!-- Párrafo -->
                 <p>Escribe tu nombre</p>
                 <!-- Input (No se cierra) - Texto de guía -->
-                <input class="input-welcome" type="text" placeholder="Ingrese su nombre">
-                <button class="button-ok">Aceptar</button>
+                <input id="input-name" class="input-welcome" type="text" placeholder="Ingrese su nombre">
+                <!-- ID: Número de identificación para poder hacer referencia al elemento -->
+                <button class="button-ok" id="btn-ok">Aceptar</button>
             </div>
         </main>
         <footer>
