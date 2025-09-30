@@ -5,7 +5,7 @@
         <!-- Relación/Referencia - Dirección de Destino -->
         <link rel="icon" href="resources/favicon.ico">
         <link rel="stylesheet" href="resources/styles.css">
-        <script src="resources/script.js"></script>
+        <script src="resources/floor.js"></script>
     </head>
 
     <body>
@@ -21,11 +21,15 @@
             <!-- División/Sección -->
             <div>
                 <!-- Párrafo -->
-                <p>Escribe tu nombre</p>
+                <p>Ingrese el largo del piso</p>
                 <!-- Input (No se cierra) - Texto de guía -->
-                <input id="input-name" class="input-welcome" type="text" placeholder="Ingrese su nombre">
+                <input id="input-length" class="input-welcome" type="number" placeholder="Ingrese el valor en metros">
+                <p>Ingrese el ancho del piso</p>
+                <input id="input-width" class="input-welcome" type="number" placeholder="Ingrese el valor en metros">
+                <p>Ingrese el precio por unidad de azulejo</p>
+                <input id="input-price" class="input-welcome" type="number" placeholder="Ingrese el valor en pesos">
                 <!-- ID: Número de identificación para poder hacer referencia al elemento -->
-                <button class="button-ok" id="btn-ok">Aceptar</button>
+                <button class="button-ok" id="btn-calculate">Calcular</button>
             </div>
         </main>
         <footer>
