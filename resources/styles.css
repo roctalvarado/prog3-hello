@@ -56,3 +56,21 @@ footer {
     text-align: left;
     padding: 15px;
 }
+
+.main-flex {
+    /* Permitir la posición de la imagen */
+    display: flex;
+    align-items: flex-start; 
+}
+
+.tile-img {
+    /* Propiedades de la imagen */
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.div-input {
+    /* Evitar que la imagen se mueva */
+    width: 500px;
+}

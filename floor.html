@@ -19,23 +19,25 @@
 
         <main>
             <!-- División/Sección -->
-            <div>
-                <!-- Párrafo -->
-                <p>Ingrese el largo del piso</p>
-                <!-- Input (No se cierra) - Texto de guía -->
-                <input id="input-length" class="input-welcome" type="number" placeholder="Ingrese el valor en metros">
-                <p>Ingrese el ancho del piso</p>
-                <input id="input-width" class="input-welcome" type="number" placeholder="Ingrese el valor en metros">
-                <p>Ingrese el precio por unidad de azulejo</p>
-                <input id="input-price" class="input-welcome" type="number" placeholder="Ingrese el valor en pesos">
-                <!-- ID: Número de identificación para poder hacer referencia al elemento -->
-                <button class="button-ok" id="btn-calculate">Calcular</button>
-                <p id="paragraph-result"></p>
+            <div class="main-flex">
+                <div class="div-input">
+                    <!-- Párrafo -->
+                    <p>Largo del Piso</p>
+                    <!-- Input (No se cierra) - Texto de guía -->
+                    <input id="input-length" class="input-welcome" type="number" placeholder="Ingrese el valor en metros">
+                    <p>Ancho del Piso</p>
+                    <input id="input-width" class="input-welcome" type="number" placeholder="Ingrese el valor en metros">
+                    <p>Precio por Unidad de Azulejo</p>
+                    <input id="input-price" class="input-welcome" type="number" placeholder="Ingrese el valor en pesos">
+                    <!-- ID: Número de identificación para poder hacer referencia al elemento -->
+                    <button class="button-ok" id="btn-calculate">Calcular</button>
+                    <p id="paragraph-result"></p>
+                </div>
+                <div>
+                    <img class="tile-img" src="resources/tile.jpg" alt="Tile">
+                </div>
             </div>
         </main>
-        <div>
-            <img src="resources/tile.jpg" alt="Tile">
-        </div>
         <footer>
             Gracias por visitar este sitio
         </footer>
