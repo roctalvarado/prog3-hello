@@ -17,8 +17,12 @@ document.addEventListener("DOMContentLoaded", function(){
         return [length, width, price];
     }
 
-    function calculateArea(length, width){
-        return (length * 100) * (width * 100);
+    function calculateTileArea(tileLength, tileWidth){
+        return tileLength * tileWidth;
+    }
+
+    function calculateFloorArea(floorLength, floorWidth){
+        return (floorLength * 100) * (floorWidth * 100);
     }
 
     function calculateQuantity(floorArea, tileArea){
@@ -30,24 +34,30 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     // Area del azulejo
-    var tileArea = 625;
+    var tileArea = calculateTileArea(25, 25);
 
     // Variable del botón para calcular
     var btnCalculate = document.getElementById("btn-calculate");
 
+    // Variable del contenido del párrafo
+    var resultParagraph = document.getElementById("paragraph-result");
+
     btnCalculate.addEventListener("click", function() {
 
         // Valores
-        var [length, width, price] = getValues();
+        var [floorLength, floorWidth, tilePrice] = getValues();
 
-        var floorArea = calculateArea(length, width);
+        var floorArea = calculateFloorArea(floorLength, floorWidth);
         var tileQuantity = calculateQuantity (floorArea, tileArea);
-        var totalPrice = calculatePrice(tileQuantity, price)
+        var totalPrice = calculatePrice(tileQuantity, tilePrice)
 
-        alert("Superficie total por cubrir: " + floorArea + " cm^2" +
-            "\nCantidad de azulejos necesarios: " + tileQuantity + " azulejos" +
-            "\nPrecio total de azulejos necesarios: $" + totalPrice + " MXN"
-        )
+        var resultText = "<strong>Superficie total por cubrir: </strong>" + floorArea + " cm^2" +
+            "<br><strong>Cantidad de azulejos necesarios: </strong>" + tileQuantity + " azulejos" +
+            "<br><strong>Precio total de azulejos necesarios: </strong>$" + totalPrice + " MXN"
+
+        // Muestra el texto en el párrafo
+        // innerHTML -> Interpreta código HTML (en este caso, el salto de línea <br> y el texto en negritas <strong></strong>)
+        resultParagraph.innerHTML = resultText;
     })
 
 })
